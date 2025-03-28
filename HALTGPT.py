@@ -29,7 +29,6 @@ from PyQt5.QtGui import QDragEnterEvent, QDropEvent
 from PIL import Image, ImageQt
 from dotenv import load_dotenv
 
-# Replace Gemini imports with OpenAI
 import openai
 from openai import OpenAI
 
@@ -846,7 +845,7 @@ class AgentMemory:
 
 # ------------------------------------------------------------------------------
 # Main Application Window
-class GeminiChatApp(QMainWindow):
+class ChatApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("OpenAI Chat Enhanced")
@@ -989,7 +988,7 @@ class GeminiChatApp(QMainWindow):
         # Header
         header_frame = QFrame()
         header_layout = QVBoxLayout(header_frame)
-        header_label = QLabel("GEMINI Chat Enhanced")
+        header_label = QLabel(" Chat Enhanced")
         header_label.setFont(current_fonts["heading"])
         header_label.setAlignment(Qt.AlignCenter)
         header_layout.addWidget(header_label)
@@ -4147,7 +4146,7 @@ if __name__ == "__main__":
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable or add it to a .env file.")
         
         # Create main window with exception handling
-        window = GeminiChatApp()
+        window = ChatApp()
         window.setWindowTitle("OpenAI Chat Enhanced")
         
         # Show the window
