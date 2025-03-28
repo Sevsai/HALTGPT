@@ -3,6 +3,8 @@
 HALTGPT is a feature-rich desktop application that provides an enhanced interface for interacting with OpenAI's language models. It offers multiple chat tabs, agent-based interactions, custom instructions, and various tools to improve your AI experience.
 
 ![image](https://github.com/user-attachments/assets/16423254-8e60-4645-8ba6-534ea510d033)
+![image](https://github.com/user-attachments/assets/9301cac2-ad5c-4432-bfb2-f435aa4ef514)
+
 
 ## Features
 
